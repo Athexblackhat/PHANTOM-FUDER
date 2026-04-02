@@ -704,7 +704,8 @@ A: Yes, fully compatible with Windows 10/11, Linux, and macOS.
 
 
 Q10: Where can I report bugs?
-A: Use GitHub Issues or contact security@research.com
+A: Use GitHub Issues or contact 
+https://phantom-fuder.netlify.app/
 
 ## 📄 License
 
