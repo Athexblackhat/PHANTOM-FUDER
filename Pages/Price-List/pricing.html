@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom FUD Pricing - Choose Your Protection Level</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Pages/Price-List/CSS/pricing.css">
+</head>
+<body>
+<canvas id="matrix-bg"></canvas>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ PHANTOM FUD v9.0</div>
+        <div class="nav-links">
+            <a href="/index.html">HOME</a>
+            <a href="/Pages/Features/features.html">FEATURES</a>
+            <a href="/Pages/Price-List/pricing.html" class="back-link">PRICING</a>
+            <a href="/Pages/Download/Download-phantom.html">DOWNLOAD</a>
+        </div>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-tags"></i> PRICING PLANS</h1>
+            <p>Choose the protection level that fits your needs. From basic obfuscation to military-grade protection.</p>
+        </div>
+        <div class="pricing-toggle">
+            <div class="toggle-btn" data-period="lifetime">LIFETIME (One-time)</div>
+        </div>
+        <div class="pricing-grid" id="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-version">BASIC</div>
+                <div class="pricing-price yearly-price">FREE</div>
+                <div class="pricing-price monthly-price" style="display: none;">FREE</div>
+                <div class="pricing-price lifetime-price" style="display: none;">FREE</div>
+                <div class="pricing-description">Perfect for testing and learning</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Basic Obfuscation</li>
+                    <li><i class="fas fa-check feature-check"></i> Junk Code Injection</li>
+                    <li><i class="fas fa-check feature-check"></i> APK Signing</li>
+                    <li><i class="fas fa-check feature-check"></i> Command Line Interface</li>
+                    <li><i class="fas fa-times feature-times"></i> String Encryption</li>
+                    <li><i class="fas fa-times feature-times"></i> Anti-Debug Protection</li>
+                    <li><i class="fas fa-times feature-times"></i> Anti-Emulator Detection</li>
+                    <li><i class="fas fa-times feature-times"></i> GUI Interface</li>
+                    <li><i class="fas fa-times feature-times"></i> Email Support</li>
+                </ul>
+                <a href="/Pages/Download/Download-phantom.html" class="buy-btn">DOWNLOAD FREE</a>
+            </div>
+
+            <!-- Enhanced -->
+            <div class="pricing-card">
+                <div class="pricing-version">ENHANCED</div>
+                <div class="pricing-price lifetime-price" style="display: none;">$149<span>/lifetime</span></div>
+                <div class="pricing-description">Enhanced protection for enthusiasts</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Everything in Basic</li>
+                    <li><i class="fas fa-check feature-check"></i> Enhanced Obfuscation</li>
+                    <li><i class="fas fa-check feature-check"></i> String Encryption</li>
+                    <li><i class="fas fa-check feature-check"></i> Class & Method Renaming</li>
+                    <li><i class="fas fa-check feature-check"></i> Anti-Debug (3 methods)</li>
+                    <li><i class="fas fa-check feature-check"></i> Basic Anti-Emulator</li>
+                    <li><i class="fas fa-check feature-check"></i> GUI Interface</li>
+                    <li><i class="fas fa-times feature-times"></i> Control Flow Obfuscation</li>
+                    <li><i class="fas fa-times feature-times"></i> Anti-Hooking Protection</li>
+                    <li><i class="fas fa-times feature-times"></i> Priority Support</li>
+                </ul>
+                <a href="#" class="buy-btn" onclick="showPayment('Enhanced', 49)">GET ENHANCED →</a>
+            </div>
+
+            <!-- Advanced -->
+            <div class="pricing-card">
+                <div class="pricing-version">ADVANCED</div>
+                <div class="pricing-price lifetime-price" style="display: none;">$299<span>/lifetime</span></div>
+                <div class="pricing-description">Advanced protection for professionals</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Everything in Enhanced</li>
+                    <li><i class="fas fa-check feature-check"></i> Control Flow Obfuscation</li>
+                    <li><i class="fas fa-check feature-check"></i> Dead Code Injection</li>
+                    <li><i class="fas fa-check feature-check"></i> Register Renaming</li>
+                    <li><i class="fas fa-check feature-check"></i> Anti-Hooking Protection</li>
+                    <li><i class="fas fa-check feature-check"></i> Anti-Frida Detection</li>
+                    <li><i class="fas fa-check feature-check"></i> Integrity Checks</li>
+                    <li><i class="fas fa-check feature-check"></i> Basic Persistence</li>
+                    <li><i class="fas fa-times feature-times"></i> AI-Powered Evasion</li>
+                    <li><i class="fas fa-times feature-times"></i> Priority Support</li>
+                </ul>
+                <a href="#" class="buy-btn" onclick="showPayment('Advanced', 99)">GET ADVANCED →</a>
+            </div>
+
+            <!-- Extreme -->
+            <div class="pricing-card">
+                <div class="pricing-version">EXTREME</div>
+                <div class="pricing-price lifetime-price" style="display: none;">$599<span>/lifetime</span></div>
+                <div class="pricing-description">Extreme protection for enterprises</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Everything in Advanced</li>
+                    <li><i class="fas fa-check feature-check"></i> AES-256 Encryption</li>
+                    <li><i class="fas fa-check feature-check"></i> Full Anti-Analysis Suite</li>
+                    <li><i class="fas fa-check feature-check"></i> Multi-Layer Persistence</li>
+                    <li><i class="fas fa-check feature-check"></i> Network Evasion</li>
+                    <li><i class="fas fa-check feature-check"></i> Traffic Morphing</li>
+                    <li><i class="fas fa-check feature-check"></i> Certificate Pinning</li>
+                    <li><i class="fas fa-check feature-check"></i> Email Support</li>
+                    <li><i class="fas fa-times feature-times"></i> AI-Powered Evasion</li>
+                    <li><i class="fas fa-times feature-times"></i> 24/7 Priority Support</li>
+                </ul>
+                <a href="#" class="buy-btn" onclick="showPayment('Extreme', 199)">GET EXTREME →</a>
+            </div>
+
+            <!-- Military -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">🔥 MOST POPULAR</div>
+                <div class="pricing-version">MILITARY</div>
+                <div class="pricing-price lifetime-price" style="display: none;">$899<span>/lifetime</span></div>
+                <div class="pricing-description">Military-grade protection</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Everything in Extreme</li>
+                    <li><i class="fas fa-check feature-check"></i> Quantum Encryption</li>
+                    <li><i class="fas fa-check feature-check"></i> Metamorphic Engine</li>
+                    <li><i class="fas fa-check feature-check"></i> 30+ Anti-Analysis Methods</li>
+                    <li><i class="fas fa-check feature-check"></i> Advanced Traffic Morphing</li>
+                    <li><i class="fas fa-check feature-check"></i> Domain Fronting</li>
+                    <li><i class="fas fa-check feature-check"></i> C2 Rotation</li>
+                    <li><i class="fas fa-check feature-check"></i> 6x Persistence Methods</li>
+                    <li><i class="fas fa-check feature-check"></i> Priority Email Support</li>
+                    <li><i class="fas fa-times feature-times"></i> AI-Powered Evasion</li>
+                </ul>
+                <a href="#" class="buy-btn" onclick="showPayment('Military', 299)">GET MILITARY →</a>
+            </div>
+
+            <!-- Phantom -->
+            <div class="pricing-card">
+                <div class="pricing-version">PHANTOM</div>
+                <div class="pricing-price lifetime-price" style="display: none;">$1499<span>/lifetime</span></div>
+                <div class="pricing-description">Ultimate protection with AI</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check feature-check"></i> Everything in Military</li>
+                    <li><i class="fas fa-check feature-check"></i> AI-Powered Evasion</li>
+                    <li><i class="fas fa-check feature-check"></i> Polymorphic Generation</li>
+                    <li><i class="fas fa-check feature-check"></i> Quantum-Resistant Encryption</li>
+                    <li><i class="fas fa-check feature-check"></i> Behavioral Simulation</li>
+                    <li><i class="fas fa-check feature-check"></i> Advanced Anti-Forensics</li>
+                    <li><i class="fas fa-check feature-check"></i> 24/7 Priority Support</li>
+                    <li><i class="fas fa-check feature-check"></i> Commercial License</li>
+                    <li><i class="fas fa-check feature-check"></i> Dedicated Account Manager</li>
+                    <li><i class="fas fa-check feature-check"></i> Custom Feature Development</li>
+                </ul>
+                <a href="#" class="buy-btn" onclick="showPayment('Phantom', 499)">GET PHANTOM →</a>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="comparison-section">
+            <h2 style="text-align: center; margin-bottom: 30px;">📊 DETAILED FEATURE COMPARISON</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>FEATURE</th>
+                        <th>BASIC</th>
+                        <th>ENHANCED</th>
+                        <th>ADVANCED</th>
+                        <th>EXTREME</th>
+                        <th>MILITARY</th>
+                        <th>PHANTOM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Basic Obfuscation</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>String Encryption</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Control Flow Obfuscation</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Polymorphic Engine</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Metamorphic Engine</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Anti-Debugging</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Anti-Emulator</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Anti-Hooking</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Anti-Frida</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>AI-Powered Evasion</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td></tr>
+                    <tr><td>Quantum Encryption</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Network Evasion</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Traffic Morphing</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Domain Fronting</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>C2 Rotation</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Persistence Methods</td><td class="text-center">0</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">3</td><td class="text-center">6</td><td class="text-center">6</td></tr>
+                    <tr><td>Anti-Forensics</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>GUI Interface</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Command Line Mode</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Email Support</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td><td class="text-center">✓</td><td class="text-center">✓</td></tr>
+                    <tr><td>Priority Support</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td></tr>
+                    <tr><td>24/7 Support</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td></tr>
+                    <tr><td>Commercial License</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✗</td><td class="text-center">✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="volume-discounts">
+            <h2><i class="fas fa-chart-line"></i> VOLUME DISCOUNTS</h2>
+            <p>Save more when you purchase multiple licenses for your team or organization</p>
+            <div class="discount-grid">
+                <div class="discount-card">
+                    <div class="discount-percent">5-10</div>
+                    <h3>Licenses</h3>
+                    <p>Save 15%</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-percent">11-25</div>
+                    <h3>Licenses</h3>
+                    <p>Save 25%</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-percent">26-50</div>
+                    <h3>Licenses</h3>
+                    <p>Save 35%</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-percent">50+</div>
+                    <h3>Licenses</h3>
+                    <p>Contact for custom pricing</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-section">
+            <h2 style="text-align: center; margin-bottom: 40px;"><i class="fas fa-question-circle"></i> FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ What's included in the free version?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The free version includes basic obfuscation, junk code injection, APK signing, and command-line interface. It's perfect for testing and learning the tool's capabilities. However, advanced features like string encryption, anti-debugging, and GUI are only available in paid versions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Can I upgrade my plan later?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! You can upgrade your plan at any time. The cost difference will be prorated for the remaining period. Simply contact our support team or upgrade through your account dashboard.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ What payment methods do you accept?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Bitcoin, Ethereum, and bank transfers for enterprise customers. All payments are processed securely through encrypted channels.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Is there a money-back guarantee?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a 30-day money-back guarantee for all paid plans. If you're not completely satisfied, contact us within 30 days of purchase for a full refund, no questions asked.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Can I use the tool for commercial purposes?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Commercial use is only permitted with the Phantom plan or custom enterprise licensing. The free and other paid plans are for personal and research use only. For commercial security testing services, please contact our sales team for an enterprise license.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ What kind of support do I get?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Support levels vary by plan:
+                        <br>- <strong>Enhanced/Advanced/Extreme:</strong> Email support with 48-hour response
+                        <br>- <strong>Military:</strong> Priority email support with 24-hour response
+                        <br>- <strong>Phantom:</strong> 24/7 priority support via email, chat, and phone, plus dedicated account manager
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Is there a team or enterprise plan?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer custom enterprise plans for organizations with special requirements. Contact our sales team for:
+                        <br>- Custom feature development
+                        <br>- Dedicated infrastructure
+                        <br>- Training and onboarding
+                        <br>- SLA agreements
+                        <br>- Volume discounts for 50+ users
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enterprise Contact -->
+        <div style="text-align: center; margin: 60px 0; padding: 40px; background: linear-gradient(135deg, rgba(0,255,0,0.1), rgba(0,0,0,0.8)); border-radius: 20px;">
+            <i class="fas fa-building" style="font-size: 48px;"></i>
+            <h2 style="margin: 20px 0;">Need an Enterprise Solution?</h2>
+            <p style="margin-bottom: 30px;">Custom deployments, dedicated support, and special licensing options available</p>
+            <a href="#" style="display: inline-block; padding: 15px 40px; background: #00ff00; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-family: 'Orbitron', monospace;">
+                CONTACT SALES →
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>PHANTOM FUD</h3>
+            <p>Next-Generation Android Payload Protection Suite</p>
+            <p style="margin-top: 10px;">v9.0 - Phantom Edition</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="/index.html">Home</a>
+            <a href="/Pages/Features/features.html">Features</a>
+            <a href="/Pages/Pricing/pricing.html">Pricing</a>
+            <a href="/Pages/Download/Download-phantom.html">Download</a>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">License Agreement</a>
+            <a href="#">Disclaimer</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>⚠️ FOR AUTHORIZED SECURITY RESEARCH ONLY ⚠️</p>
+        <p>&copy; 2025-2026 ATHEX BLACK HAT. All rights reserved.</p>
+    </div>
+</footer>
+<script src="/Pages/Price-List/JavaScript/pricing.js"></script>
+</body>
+</html>

